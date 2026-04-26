@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://athkarak1.com/sitemap.xml
