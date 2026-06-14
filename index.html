@@ -20,6 +20,16 @@
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:url" content="https://athkarak1.com/"/>
 <meta charset="UTF-8">
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="apple-mobile-web-app-title" content="أذكاري"/>
+  <meta name="theme-color" content="#0f2d1e"/>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+  <link rel="apple-touch-icon" sizes="152x152" href="icon-152.png"/>
+  <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>أذكار المسلم</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -531,28 +541,28 @@ const DATA = {
     title: "أذكار الصباح",
     azkar: [
       { z: "أَعُوذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيم\n\nاللهُ لا إلهَ إلا هو الحيُّ القيوم، لا تأخذه سنةٌ ولا نوم، له ما في السماوات وما في الأرض، من ذا الذي يشفع عنده إلا بإذنه، يعلم ما بين أيديهم وما خلفهم، ولا يحيطون بشيء من علمه إلا بما شاء، وسع كرسيه السماوات والأرض ولا يؤوده حفظهما وهو العلي العظيم.\n[آية الكرسي — البقرة:255]", r: 1, b: "من قالها حين يصبح أُجير من الجن حتى يمسى." },
-      ,{ z: "بسم الله الرحمن الرحيم\nقُلْ هُوَ اللهُ أَحَد، اللهُ الصَّمَد، لَمْ يَلِدْ وَلَمْ يُولَد، وَلَمْ يَكُن لَّهُ كُفُوًا أَحَد.", r: 3, b: "كفته من كل شيء حين يصبح ويمسى (مع المعوذتين)." },
-      ,{ z: "بسم الله الرحمن الرحيم\nقُلْ أَعُوذُ بِرَبِّ الْفَلَق، مِن شَرِّ مَا خَلَق، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَب، وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَد، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَد.", r: 3, b: "كفته من كل شيء حين يصبح ويمسى." },
-      ,{ z: "بسم الله الرحمن الرحيم\nقُلْ أَعُوذُ بِرَبِّ النَّاس، مَلِكِ النَّاس، إِلَهِ النَّاس، مِن شَرِّ الْوَسْوَاسِ الْخَنَّاس، الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاس، مِنَ الْجِنَّةِ وَالنَّاس.", r: 3, b: "كفته من كل شيء حين يصبح ويمسى." },
-      ,{ z: "أَصْبَحْنا وَأَصْبَحَ المُلْكُ لله، والحمدُ لله، لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير.\n\nربِّ أسألك خير ما في هذا اليوم وخير ما بعده، وأعوذ بك من شر ما في هذا اليوم وشر ما بعده.\n\nربِّ أعوذ بك من الكسل وسوء الكِبَر، وأعوذ بك من عذابٍ في النار وعذابٍ في القبر.", r: 1, b: "" },
-      ,{ z: "اللّهُمَّ أَنْتَ رَبِّي لا إله إلا أنت، خلقتني وأنا عبدُك، وأنا على عهدك ووعدك ما استطعت، أعوذ بك من شرِّ ما صنعت، أبوءُ لك بنعمتك عليَّ وأبوءُ بذنبي فاغفر لي فإنه لا يغفر الذنوب إلا أنت.", r: 1, b: "سيد الاستغفار — من قالها موقناً حين يصبح ومات دخل الجنة." },
-      ,{ z: "رَضِيتُ باللهِ رَبّاً، وبالإسلامِ ديناً، وبمحمدٍ \uFDFA نبيّاً.", r: 3, b: "كان حقاً على الله أن يرضيه يوم القيامة." },
-      ,{ z: "اللّهُمَّ إِنِّي أَصْبَحْتُ أُشْهِدُك، وأُشْهِدُ حَمَلَةَ عَرْشِك، وملائكتَك، وجميعَ خَلْقِك، أنك أنت الله لا إله إلا أنت وحدك لا شريك لك، وأن محمداً عبدُك ورسولُك.", r: 4, b: "من قالها أعتقه الله من النار." },
-      ,{ z: "اللّهُمَّ ما أَصْبَحَ بي من نعمةٍ أو بأحدٍ من خلقك، فمنك وحدك لا شريك لك، فلك الحمدُ ولك الشُّكر.", r: 1, b: "من قالها حين يصبح أدّى شكرَ يومه." },
-      ,{ z: "حَسْبِيَ اللهُ لا إله إلا هو، عليه توكّلتُ وهو ربُّ العرشِ العظيم.", r: 7, b: "من قالها كفاه الله ما أهمَّه من أمر الدنيا والآخرة." },
-      ,{ z: "بِسمِ اللهِ الذي لا يَضُرُّ مَعَ اسمِهِ شيءٌ في الأرضِ ولا في السماء وهو السَّميعُ العَليم.", r: 3, b: "لم يضرَّه شيء." },
-      ,{ z: "اللّهُمَّ بِكَ أَصْبَحْنا وبكَ أَمسَيْنا، وبكَ نَحْيا وبكَ نَموتُ وإليكَ النُّشور.", r: 1, b: "" },
-      ,{ z: "أَصْبَحْنا عَلَى فِطْرَةِ الإسلام، وعلى كَلِمَةِ الإخلاص، وعلى دينِ نبيِّنا محمدٍ \uFDFA، وعلى مِلَّةِ أبينا إبراهيم حنيفاً مسلماً وما كان من المشركين.", r: 1, b: "" },
-      ,{ z: "سُبحانَ اللهِ وبِحَمدِهِ عَدَدَ خَلْقِه، وَرِضا نَفْسِه، وزِنَةَ عَرْشِه، ومِدادَ كَلِماتِه.", r: 3, b: "" },
-      ,{ z: "اللّهُمَّ عافِني في بَدَني، اللّهُمَّ عافِني في سَمْعي، اللّهُمَّ عافِني في بَصَري، لا إله إلا أنت.", r: 3, b: "" },
-      ,{ z: "اللّهُمَّ إِنِّي أعوذُ بك من الكُفر والفَقْر، وأعوذُ بك من عذابِ القبر، لا إله إلا أنت.", r: 3, b: "" },
-      ,{ z: "اللّهُمَّ إِنِّي أسألُك العَفوَ والعافيةَ في الدُّنيا والآخرة، اللّهُمَّ إِنِّي أسألُك العفوَ والعافيةَ في ديني ودنياي وأهلي ومالي، اللّهُمَّ اسْتُرْ عوراتي وآمِنْ رَوْعاتي، اللّهُمَّ احفظني من بين يديَّ ومن خلفي وعن يميني وعن شمالي ومن فوقي، وأعوذُ بعظَمَتِك أن أُغتالَ من تحتي.", r: 1, b: "" },
-      ,{ z: "يا حيُّ يا قيُّومُ برحمتِك أستغيث، أصلِحْ لي شأني كلَّه ولا تَكِلْني إلى نفسي طَرفةَ عَيْن.", r: 3, b: "" },
-      ,{ z: "اللَّهُمَّ إِنِّي أسألُك عِلماً نافعاً، ورزقاً طيِّباً، وعملاً مُتَقَبَّلاً.", r: 1, b: "تقال بعد سلام صلاة الفجر." },
-      ,{ z: "اللَّهُمَّ صَلِّ على مُحَمَّدٍ وآلِ مُحَمَّد، كما صلَّيتَ على آلِ إبراهيم، إنَّك حميدٌ مجيد.\nاللَّهُمَّ بارِكْ على مُحَمَّدٍ وآلِ مُحَمَّد، كما باركتَ على آلِ إبراهيم، إنَّك حميدٌ مجيد.", r: 10, b: "من صلّى عليه حين يصبح أدركته شفاعتُه يوم القيامة." },
-      ,{ z: "أسْتَغْفِرُ اللهَ العَظِيمَ الَّذِي لا إلَهَ إلاَّ هُوَ، الحَيُّ القَيُّومُ، وَأتُوبُ إليه.", r: 3, b: "" },
-      ,{ z: "لا إله إلا الله وحده لا شريك له، له الملكُ وله الحمدُ وهو على كل شيء قدير.", r: 100, b: "كانت له عِدلُ عشر رقاب، وكُتِبت له مئة حسنة، ومُحيت عنه مئة سيئة." },
-      ,{ z: "سُبحانَ اللهِ وبِحَمدِه.", r: 100, b: "حُطَّت خطاياه وإن كانت مثل زبد البحر." }
+      { z: "بسم الله الرحمن الرحيم\nقُلْ هُوَ اللهُ أَحَد، اللهُ الصَّمَد، لَمْ يَلِدْ وَلَمْ يُولَد، وَلَمْ يَكُن لَّهُ كُفُوًا أَحَد.", r: 3, b: "كفته من كل شيء حين يصبح ويمسى (مع المعوذتين)." },
+      { z: "بسم الله الرحمن الرحيم\nقُلْ أَعُوذُ بِرَبِّ الْفَلَق، مِن شَرِّ مَا خَلَق، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَب، وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَد، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَد.", r: 3, b: "كفته من كل شيء حين يصبح ويمسى." },
+      { z: "بسم الله الرحمن الرحيم\nقُلْ أَعُوذُ بِرَبِّ النَّاس، مَلِكِ النَّاس، إِلَهِ النَّاس، مِن شَرِّ الْوَسْوَاسِ الْخَنَّاس، الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاس، مِنَ الْجِنَّةِ وَالنَّاس.", r: 3, b: "كفته من كل شيء حين يصبح ويمسى." },
+      { z: "أَصْبَحْنا وَأَصْبَحَ المُلْكُ لله، والحمدُ لله، لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير.\n\nربِّ أسألك خير ما في هذا اليوم وخير ما بعده، وأعوذ بك من شر ما في هذا اليوم وشر ما بعده.\n\nربِّ أعوذ بك من الكسل وسوء الكِبَر، وأعوذ بك من عذابٍ في النار وعذابٍ في القبر.", r: 1, b: "" },
+      { z: "اللّهُمَّ أَنْتَ رَبِّي لا إله إلا أنت، خلقتني وأنا عبدُك، وأنا على عهدك ووعدك ما استطعت، أعوذ بك من شرِّ ما صنعت، أبوءُ لك بنعمتك عليَّ وأبوءُ بذنبي فاغفر لي فإنه لا يغفر الذنوب إلا أنت.", r: 1, b: "سيد الاستغفار — من قالها موقناً حين يصبح ومات دخل الجنة." },
+      { z: "رَضِيتُ باللهِ رَبّاً، وبالإسلامِ ديناً، وبمحمدٍ \uFDFA نبيّاً.", r: 3, b: "كان حقاً على الله أن يرضيه يوم القيامة." },
+      { z: "اللّهُمَّ إِنِّي أَصْبَحْتُ أُشْهِدُك، وأُشْهِدُ حَمَلَةَ عَرْشِك، وملائكتَك، وجميعَ خَلْقِك، أنك أنت الله لا إله إلا أنت وحدك لا شريك لك، وأن محمداً عبدُك ورسولُك.", r: 4, b: "من قالها أعتقه الله من النار." },
+      { z: "اللّهُمَّ ما أَصْبَحَ بي من نعمةٍ أو بأحدٍ من خلقك، فمنك وحدك لا شريك لك، فلك الحمدُ ولك الشُّكر.", r: 1, b: "من قالها حين يصبح أدّى شكرَ يومه." },
+      { z: "حَسْبِيَ اللهُ لا إله إلا هو، عليه توكّلتُ وهو ربُّ العرشِ العظيم.", r: 7, b: "من قالها كفاه الله ما أهمَّه من أمر الدنيا والآخرة." },
+      { z: "بِسمِ اللهِ الذي لا يَضُرُّ مَعَ اسمِهِ شيءٌ في الأرضِ ولا في السماء وهو السَّميعُ العَليم.", r: 3, b: "لم يضرَّه شيء." },
+      { z: "اللّهُمَّ بِكَ أَصْبَحْنا وبكَ أَمسَيْنا، وبكَ نَحْيا وبكَ نَموتُ وإليكَ النُّشور.", r: 1, b: "" },
+      { z: "أَصْبَحْنا عَلَى فِطْرَةِ الإسلام، وعلى كَلِمَةِ الإخلاص، وعلى دينِ نبيِّنا محمدٍ \uFDFA، وعلى مِلَّةِ أبينا إبراهيم حنيفاً مسلماً وما كان من المشركين.", r: 1, b: "" },
+      { z: "سُبحانَ اللهِ وبِحَمدِهِ عَدَدَ خَلْقِه، وَرِضا نَفْسِه، وزِنَةَ عَرْشِه، ومِدادَ كَلِماتِه.", r: 3, b: "" },
+      { z: "اللّهُمَّ عافِني في بَدَني، اللّهُمَّ عافِني في سَمْعي، اللّهُمَّ عافِني في بَصَري، لا إله إلا أنت.", r: 3, b: "" },
+      { z: "اللّهُمَّ إِنِّي أعوذُ بك من الكُفر والفَقْر، وأعوذُ بك من عذابِ القبر، لا إله إلا أنت.", r: 3, b: "" },
+      { z: "اللّهُمَّ إِنِّي أسألُك العَفوَ والعافيةَ في الدُّنيا والآخرة، اللّهُمَّ إِنِّي أسألُك العفوَ والعافيةَ في ديني ودنياي وأهلي ومالي، اللّهُمَّ اسْتُرْ عوراتي وآمِنْ رَوْعاتي، اللّهُمَّ احفظني من بين يديَّ ومن خلفي وعن يميني وعن شمالي ومن فوقي، وأعوذُ بعظَمَتِك أن أُغتالَ من تحتي.", r: 1, b: "" },
+      { z: "يا حيُّ يا قيُّومُ برحمتِك أستغيث، أصلِحْ لي شأني كلَّه ولا تَكِلْني إلى نفسي طَرفةَ عَيْن.", r: 3, b: "" },
+      { z: "اللَّهُمَّ إِنِّي أسألُك عِلماً نافعاً، ورزقاً طيِّباً، وعملاً مُتَقَبَّلاً.", r: 1, b: "تقال بعد سلام صلاة الفجر." },
+      { z: "اللَّهُمَّ صَلِّ على مُحَمَّدٍ وآلِ مُحَمَّد، كما صلَّيتَ على آلِ إبراهيم، إنَّك حميدٌ مجيد.\nاللَّهُمَّ بارِكْ على مُحَمَّدٍ وآلِ مُحَمَّد، كما باركتَ على آلِ إبراهيم، إنَّك حميدٌ مجيد.", r: 10, b: "من صلّى عليه حين يصبح أدركته شفاعتُه يوم القيامة." },
+      { z: "أسْتَغْفِرُ اللهَ العَظِيمَ الَّذِي لا إلَهَ إلاَّ هُوَ، الحَيُّ القَيُّومُ، وَأتُوبُ إليه.", r: 3, b: "" },
+      { z: "لا إله إلا الله وحده لا شريك له، له الملكُ وله الحمدُ وهو على كل شيء قدير.", r: 100, b: "كانت له عِدلُ عشر رقاب، وكُتِبت له مئة حسنة، ومُحيت عنه مئة سيئة." },
+      { z: "سُبحانَ اللهِ وبِحَمدِه.", r: 100, b: "حُطَّت خطاياه وإن كانت مثل زبد البحر." }
     
     ]
   },
@@ -560,28 +570,28 @@ const DATA = {
     title: "أذكار المساء",
     azkar: [
       { z: "أَعُوذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيم\n\nاللهُ لا إلهَ إلا هو الحيُّ القيوم، لا تأخذه سنةٌ ولا نوم، له ما في السماوات وما في الأرض، من ذا الذي يشفع عنده إلا بإذنه، يعلم ما بين أيديهم وما خلفهم، ولا يحيطون بشيء من علمه إلا بما شاء، وسع كرسيه السماوات والأرض ولا يؤوده حفظهما وهو العلي العظيم.\n[آية الكرسي — البقرة:255]", r: 1, b: "من قالها حين يمسى أُجير من الجن حتى يصبح." },
-      ,{ z: "بسم الله الرحمن الرحيم\nقُلْ هُوَ اللهُ أَحَد، اللهُ الصَّمَد، لَمْ يَلِدْ وَلَمْ يُولَد، وَلَمْ يَكُن لَّهُ كُفُوًا أَحَد.", r: 3, b: "كفته من كل شيء حين يمسى (مع المعوذتين)." },
-      ,{ z: "بسم الله الرحمن الرحيم\nقُلْ أَعُوذُ بِرَبِّ الْفَلَق، مِن شَرِّ مَا خَلَق، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَب، وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَد، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَد.", r: 3, b: "كفته من كل شيء حين يمسى." },
-      ,{ z: "بسم الله الرحمن الرحيم\nقُلْ أَعُوذُ بِرَبِّ النَّاس، مَلِكِ النَّاس، إِلَهِ النَّاس، مِن شَرِّ الْوَسْوَاسِ الْخَنَّاس، الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاس، مِنَ الْجِنَّةِ وَالنَّاس.", r: 3, b: "كفته من كل شيء حين يمسى." },
-      ,{ z: "أَمْسَيْنا وَأَمْسَى المُلكُ لله، والحمدُ لله، لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير.\n\nربِّ أسألك خير ما في هذا اليوم وخير ما بعده، وأعوذ بك من شر ما في هذا اليوم وشر ما بعده.\n\nربِّ أعوذ بك من الكسل وسوء الكِبَر، وأعوذ بك من عذابٍ في النار وعذابٍ في القبر.", r: 1, b: "" },
-      ,{ z: "اللّهُمَّ أَنْتَ رَبِّي لا إله إلا أنت، خلقتني وأنا عبدُك، وأنا على عهدك ووعدك ما استطعت، أعوذ بك من شرِّ ما صنعت، أبوءُ لك بنعمتك عليَّ وأبوءُ بذنبي فاغفر لي فإنه لا يغفر الذنوب إلا أنت.", r: 1, b: "سيد الاستغفار — من قالها موقناً حين يمسى ومات دخل الجنة." },
-      ,{ z: "رَضِيتُ باللهِ رَبّاً، وبالإسلامِ ديناً، وبمحمدٍ \uFDFA نبيّاً.", r: 3, b: "كان حقاً على الله أن يرضيه يوم القيامة." },
-      ,{ z: "اللّهُمَّ إِنِّي أَمسيتُ أُشْهِدُك، وأُشْهِدُ حَمَلَةَ عَرْشِك، وملائكتَك، وجميعَ خَلْقِك، أنك أنت الله لا إله إلا أنت وحدك لا شريك لك، وأن محمداً عبدُك ورسولُك.", r: 4, b: "من قالها أعتقه الله من النار." },
-      ,{ z: "اللّهُمَّ ما أَمسَى بي من نعمةٍ أو بأحدٍ من خلقك، فمنك وحدك لا شريك لك، فلك الحمدُ ولك الشُّكر.", r: 1, b: "من قالها حين يمسى أدّى شكرَ يومه." },
-      ,{ z: "حَسْبِيَ اللهُ لا إله إلا هو، عليه توكّلتُ وهو ربُّ العرشِ العظيم.", r: 7, b: "من قالها كفاه الله ما أهمَّه من أمر الدنيا والآخرة." },
-      ,{ z: "بِسمِ اللهِ الذي لا يَضُرُّ مَعَ اسمِهِ شيءٌ في الأرضِ ولا في السماء وهو السَّميعُ العَليم.", r: 3, b: "لم يضرَّه شيء." },
-      ,{ z: "اللّهُمَّ بِكَ أَمسَيْنا وبكَ أَصْبَحْنا، وبكَ نَحْيا وبكَ نَموتُ وإليكَ النُّشور.", r: 1, b: "" },
-      ,{ z: "أَمسَيْنا عَلَى فِطْرَةِ الإسلام، وعلى كَلِمَةِ الإخلاص، وعلى دينِ نبيِّنا محمدٍ \uFDFA، وعلى مِلَّةِ أبينا إبراهيم حنيفاً مسلماً وما كان من المشركين.", r: 1, b: "" },
-      ,{ z: "سُبحانَ اللهِ وبِحَمدِهِ عَدَدَ خَلْقِه، وَرِضا نَفْسِه، وزِنَةَ عَرْشِه، ومِدادَ كَلِماتِه.", r: 3, b: "" },
-      ,{ z: "اللّهُمَّ عافِني في بَدَني، اللّهُمَّ عافِني في سَمْعي، اللّهُمَّ عافِني في بَصَري، لا إله إلا أنت.", r: 3, b: "" },
-      ,{ z: "اللّهُمَّ إِنِّي أعوذُ بك من الكُفر والفَقْر، وأعوذُ بك من عذابِ القبر، لا إله إلا أنت.", r: 3, b: "" },
-      ,{ z: "اللّهُمَّ إِنِّي أسألُك العَفوَ والعافيةَ في الدُّنيا والآخرة، اللّهُمَّ إِنِّي أسألُك العفوَ والعافيةَ في ديني ودنياي وأهلي ومالي، اللّهُمَّ اسْتُرْ عوراتي وآمِنْ رَوْعاتي، اللّهُمَّ احفظني من بين يديَّ ومن خلفي وعن يميني وعن شمالي ومن فوقي، وأعوذُ بعظَمَتِك أن أُغتالَ من تحتي.", r: 1, b: "" },
-      ,{ z: "يا حيُّ يا قيُّومُ برحمتِك أستغيث، أصلِحْ لي شأني كلَّه ولا تَكِلْني إلى نفسي طَرفةَ عَيْن.", r: 3, b: "" },
-      ,{ z: "اللّهُمَّ عالِمَ الغَيبِ والشَّهادة، فاطِرَ السماواتِ والأرض، ربَّ كلِّ شيءٍ ومَليكَه، أشهدُ أن لا إله إلا أنت، أعوذُ بك من شرِّ نفسي ومن شرِّ الشيطانِ وشِرْكِه، وأن أقترِفَ على نفسي سوءاً أو أجُرَّه إلى مُسلم.", r: 1, b: "" },
-      ,{ z: "أعوذُ بكَلِماتِ اللهِ التَّامَّاتِ من شرِّ ما خَلَق.", r: 3, b: "" },
-      ,{ z: "اللَّهُمَّ صَلِّ على مُحَمَّدٍ وآلِ مُحَمَّد، كما صلَّيتَ على آلِ إبراهيم، إنَّك حميدٌ مجيد.\nاللَّهُمَّ بارِكْ على مُحَمَّدٍ وآلِ مُحَمَّد، كما باركتَ على آلِ إبراهيم، إنَّك حميدٌ مجيد.", r: 10, b: "من صلّى عليه حين يمسى أدركته شفاعتُه يوم القيامة." },
-      ,{ z: "لا إله إلا الله وحده لا شريك له، له الملكُ وله الحمدُ وهو على كل شيء قدير.", r: 100, b: "كانت له عِدلُ عشر رقاب، وكُتِبت له مئة حسنة، ومُحيت عنه مئة سيئة." },
-      ,{ z: "سُبحانَ اللهِ وبِحَمدِه.", r: 100, b: "حُطَّت خطاياه وإن كانت مثل زبد البحر." }
+      { z: "بسم الله الرحمن الرحيم\nقُلْ هُوَ اللهُ أَحَد، اللهُ الصَّمَد، لَمْ يَلِدْ وَلَمْ يُولَد، وَلَمْ يَكُن لَّهُ كُفُوًا أَحَد.", r: 3, b: "كفته من كل شيء حين يمسى (مع المعوذتين)." },
+      { z: "بسم الله الرحمن الرحيم\nقُلْ أَعُوذُ بِرَبِّ الْفَلَق، مِن شَرِّ مَا خَلَق، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَب، وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَد، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَد.", r: 3, b: "كفته من كل شيء حين يمسى." },
+      { z: "بسم الله الرحمن الرحيم\nقُلْ أَعُوذُ بِرَبِّ النَّاس، مَلِكِ النَّاس، إِلَهِ النَّاس، مِن شَرِّ الْوَسْوَاسِ الْخَنَّاس، الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاس، مِنَ الْجِنَّةِ وَالنَّاس.", r: 3, b: "كفته من كل شيء حين يمسى." },
+      { z: "أَمْسَيْنا وَأَمْسَى المُلكُ لله، والحمدُ لله، لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير.\n\nربِّ أسألك خير ما في هذا اليوم وخير ما بعده، وأعوذ بك من شر ما في هذا اليوم وشر ما بعده.\n\nربِّ أعوذ بك من الكسل وسوء الكِبَر، وأعوذ بك من عذابٍ في النار وعذابٍ في القبر.", r: 1, b: "" },
+      { z: "اللّهُمَّ أَنْتَ رَبِّي لا إله إلا أنت، خلقتني وأنا عبدُك، وأنا على عهدك ووعدك ما استطعت، أعوذ بك من شرِّ ما صنعت، أبوءُ لك بنعمتك عليَّ وأبوءُ بذنبي فاغفر لي فإنه لا يغفر الذنوب إلا أنت.", r: 1, b: "سيد الاستغفار — من قالها موقناً حين يمسى ومات دخل الجنة." },
+      { z: "رَضِيتُ باللهِ رَبّاً، وبالإسلامِ ديناً، وبمحمدٍ \uFDFA نبيّاً.", r: 3, b: "كان حقاً على الله أن يرضيه يوم القيامة." },
+      { z: "اللّهُمَّ إِنِّي أَمسيتُ أُشْهِدُك، وأُشْهِدُ حَمَلَةَ عَرْشِك، وملائكتَك، وجميعَ خَلْقِك، أنك أنت الله لا إله إلا أنت وحدك لا شريك لك، وأن محمداً عبدُك ورسولُك.", r: 4, b: "من قالها أعتقه الله من النار." },
+      { z: "اللّهُمَّ ما أَمسَى بي من نعمةٍ أو بأحدٍ من خلقك، فمنك وحدك لا شريك لك، فلك الحمدُ ولك الشُّكر.", r: 1, b: "من قالها حين يمسى أدّى شكرَ يومه." },
+      { z: "حَسْبِيَ اللهُ لا إله إلا هو، عليه توكّلتُ وهو ربُّ العرشِ العظيم.", r: 7, b: "من قالها كفاه الله ما أهمَّه من أمر الدنيا والآخرة." },
+      { z: "بِسمِ اللهِ الذي لا يَضُرُّ مَعَ اسمِهِ شيءٌ في الأرضِ ولا في السماء وهو السَّميعُ العَليم.", r: 3, b: "لم يضرَّه شيء." },
+      { z: "اللّهُمَّ بِكَ أَمسَيْنا وبكَ أَصْبَحْنا، وبكَ نَحْيا وبكَ نَموتُ وإليكَ النُّشور.", r: 1, b: "" },
+      { z: "أَمسَيْنا عَلَى فِطْرَةِ الإسلام، وعلى كَلِمَةِ الإخلاص، وعلى دينِ نبيِّنا محمدٍ \uFDFA، وعلى مِلَّةِ أبينا إبراهيم حنيفاً مسلماً وما كان من المشركين.", r: 1, b: "" },
+      { z: "سُبحانَ اللهِ وبِحَمدِهِ عَدَدَ خَلْقِه، وَرِضا نَفْسِه، وزِنَةَ عَرْشِه، ومِدادَ كَلِماتِه.", r: 3, b: "" },
+      { z: "اللّهُمَّ عافِني في بَدَني، اللّهُمَّ عافِني في سَمْعي، اللّهُمَّ عافِني في بَصَري، لا إله إلا أنت.", r: 3, b: "" },
+      { z: "اللّهُمَّ إِنِّي أعوذُ بك من الكُفر والفَقْر، وأعوذُ بك من عذابِ القبر، لا إله إلا أنت.", r: 3, b: "" },
+      { z: "اللّهُمَّ إِنِّي أسألُك العَفوَ والعافيةَ في الدُّنيا والآخرة، اللّهُمَّ إِنِّي أسألُك العفوَ والعافيةَ في ديني ودنياي وأهلي ومالي، اللّهُمَّ اسْتُرْ عوراتي وآمِنْ رَوْعاتي، اللّهُمَّ احفظني من بين يديَّ ومن خلفي وعن يميني وعن شمالي ومن فوقي، وأعوذُ بعظَمَتِك أن أُغتالَ من تحتي.", r: 1, b: "" },
+      { z: "يا حيُّ يا قيُّومُ برحمتِك أستغيث، أصلِحْ لي شأني كلَّه ولا تَكِلْني إلى نفسي طَرفةَ عَيْن.", r: 3, b: "" },
+      { z: "اللّهُمَّ عالِمَ الغَيبِ والشَّهادة، فاطِرَ السماواتِ والأرض، ربَّ كلِّ شيءٍ ومَليكَه، أشهدُ أن لا إله إلا أنت، أعوذُ بك من شرِّ نفسي ومن شرِّ الشيطانِ وشِرْكِه، وأن أقترِفَ على نفسي سوءاً أو أجُرَّه إلى مُسلم.", r: 1, b: "" },
+      { z: "أعوذُ بكَلِماتِ اللهِ التَّامَّاتِ من شرِّ ما خَلَق.", r: 3, b: "" },
+      { z: "اللَّهُمَّ صَلِّ على مُحَمَّدٍ وآلِ مُحَمَّد، كما صلَّيتَ على آلِ إبراهيم، إنَّك حميدٌ مجيد.\nاللَّهُمَّ بارِكْ على مُحَمَّدٍ وآلِ مُحَمَّد، كما باركتَ على آلِ إبراهيم، إنَّك حميدٌ مجيد.", r: 10, b: "من صلّى عليه حين يمسى أدركته شفاعتُه يوم القيامة." },
+      { z: "لا إله إلا الله وحده لا شريك له، له الملكُ وله الحمدُ وهو على كل شيء قدير.", r: 100, b: "كانت له عِدلُ عشر رقاب، وكُتِبت له مئة حسنة، ومُحيت عنه مئة سيئة." },
+      { z: "سُبحانَ اللهِ وبِحَمدِه.", r: 100, b: "حُطَّت خطاياه وإن كانت مثل زبد البحر." }
     
     ]
   },
@@ -589,18 +599,18 @@ const DATA = {
     title: "أذكار بعد الصلاة",
     azkar: [
       { z: "أسـتغفر الله، أسـتغفر الله، أسـتغفر الله.\n\nاللهـم أنـت السلام، ومـنك السلام، تباركت يا ذا الجـلال والإكـرام.", r: 1, b: "" },
-      ,{ z: "لا إله إلا الله وحده لا شريك له، له المـلك وله الحمد، وهو على كل شيء قدير.\n\nاللهـم لا مانع لما أعطـيت، ولا معطـي لما منـعت، ولا ينفـع ذا الجـد منـك الجـد.", r: 1, b: "" },
-      ,{ z: "لا إله إلا الله وحده لا شريك له، له الملك وله الحمد، وهو على كل شيء قدير، لا حـول ولا قـوة إلا بالله، لا إله إلا اللـه، ولا نعـبد إلا إيـاه، له النعـمة وله الفضل وله الثـناء الحـسن، لا إله إلا الله مخلصـين لـه الدين ولو كـره الكـافرون.", r: 1, b: "" },
-      ,{ z: "سُـبحان الله، والحمـد لله، والله أكـبر.", r: 33, b: "تُقال بعد كل صلاة." },
-      ,{ z: "لا إله إلا الله وحـده لا شريك له، له الملك وله الحمد، وهو على كل شيء قـدير.", r: 1, b: "تُكمل المئة بعد التسبيح." },
-      ,{ z: "بسم الله الرحمن الرحيم\nقُلْ هُوَ اللهُ أَحَد، اللهُ الصَّمَد، لَمْ يَلِدْ وَلَمْ يُولَد، وَلَمْ يَكُن لَّهُ كُفُوًا أَحَد.", r: 3, b: "ثلاث مرات بعد الفجر والمغرب، ومرة بعد الصلوات الأخرى." },
-      ,{ z: "بسم الله الرحمن الرحيم\nقُلْ أَعُوذُ بِرَبِّ الْفَلَق، مِن شَرِّ مَا خَلَق، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَب، وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَد، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَد.", r: 3, b: "ثلاث مرات بعد الفجر والمغرب، ومرة بعد الصلوات الأخرى." },
-      ,{ z: "بسم الله الرحمن الرحيم\nقُلْ أَعُوذُ بِرَبِّ النَّاس، مَلِكِ النَّاس، إِلَهِ النَّاس، مِن شَرِّ الْوَسْوَاسِ الْخَنَّاس، الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاس، مِنَ الْجِنَّةِ وَالنَّاس.", r: 3, b: "ثلاث مرات بعد الفجر والمغرب، ومرة بعد الصلوات الأخرى." },
-      ,{ z: "أَعُوذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيم\n\nاللهُ لا إلهَ إلا هو الحيُّ القيوم، لا تأخذه سنةٌ ولا نوم، له ما في السماوات وما في الأرض، من ذا الذي يشفع عنده إلا بإذنه، يعلم ما بين أيديهم وما خلفهم، ولا يحيطون بشيء من علمه إلا بما شاء، وسع كرسيه السماوات والأرض ولا يؤوده حفظهما وهو العلي العظيم.\n[آية الكرسي — البقرة:255]", r: 1, b: "من قرأها دبر كل صلاة مكتوبة لم يمنعه من دخول الجنة إلا الموت." },
-      ,{ z: "لا إله إلا الله وحـده لا شريك له، له الملك وله الحمد، يحيـي ويمـيت وهو على كل شيء قدير.", r: 10, b: "عشر مرات بعد المغرب والصبح." },
-      ,{ z: "اللَّهُمَّ إِنِّي أسألُك عِلماً نافعاً، ورزقاً طيِّباً، وعملاً مُتَقَبَّلاً.", r: 1, b: "بعد السلام من صلاة الفجر." },
-      ,{ z: "اللهم أجِرني من النار.", r: 7, b: "بعد صلاة الصبح والمغرب." },
-      ,{ z: "اللهم أعِنِّي على ذِكرِك وشُكرِك وحُسنِ عِبادتِك.", r: 1, b: "" }
+      { z: "لا إله إلا الله وحده لا شريك له، له المـلك وله الحمد، وهو على كل شيء قدير.\n\nاللهـم لا مانع لما أعطـيت، ولا معطـي لما منـعت، ولا ينفـع ذا الجـد منـك الجـد.", r: 1, b: "" },
+      { z: "لا إله إلا الله وحده لا شريك له، له الملك وله الحمد، وهو على كل شيء قدير، لا حـول ولا قـوة إلا بالله، لا إله إلا اللـه، ولا نعـبد إلا إيـاه، له النعـمة وله الفضل وله الثـناء الحـسن، لا إله إلا الله مخلصـين لـه الدين ولو كـره الكـافرون.", r: 1, b: "" },
+      { z: "سُـبحان الله، والحمـد لله، والله أكـبر.", r: 33, b: "تُقال بعد كل صلاة." },
+      { z: "لا إله إلا الله وحـده لا شريك له، له الملك وله الحمد، وهو على كل شيء قـدير.", r: 1, b: "تُكمل المئة بعد التسبيح." },
+      { z: "بسم الله الرحمن الرحيم\nقُلْ هُوَ اللهُ أَحَد، اللهُ الصَّمَد، لَمْ يَلِدْ وَلَمْ يُولَد، وَلَمْ يَكُن لَّهُ كُفُوًا أَحَد.", r: 3, b: "ثلاث مرات بعد الفجر والمغرب، ومرة بعد الصلوات الأخرى." },
+      { z: "بسم الله الرحمن الرحيم\nقُلْ أَعُوذُ بِرَبِّ الْفَلَق، مِن شَرِّ مَا خَلَق، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَب، وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَد، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَد.", r: 3, b: "ثلاث مرات بعد الفجر والمغرب، ومرة بعد الصلوات الأخرى." },
+      { z: "بسم الله الرحمن الرحيم\nقُلْ أَعُوذُ بِرَبِّ النَّاس، مَلِكِ النَّاس، إِلَهِ النَّاس، مِن شَرِّ الْوَسْوَاسِ الْخَنَّاس، الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاس، مِنَ الْجِنَّةِ وَالنَّاس.", r: 3, b: "ثلاث مرات بعد الفجر والمغرب، ومرة بعد الصلوات الأخرى." },
+      { z: "أَعُوذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيم\n\nاللهُ لا إلهَ إلا هو الحيُّ القيوم، لا تأخذه سنةٌ ولا نوم، له ما في السماوات وما في الأرض، من ذا الذي يشفع عنده إلا بإذنه، يعلم ما بين أيديهم وما خلفهم، ولا يحيطون بشيء من علمه إلا بما شاء، وسع كرسيه السماوات والأرض ولا يؤوده حفظهما وهو العلي العظيم.\n[آية الكرسي — البقرة:255]", r: 1, b: "من قرأها دبر كل صلاة مكتوبة لم يمنعه من دخول الجنة إلا الموت." },
+      { z: "لا إله إلا الله وحـده لا شريك له، له الملك وله الحمد، يحيـي ويمـيت وهو على كل شيء قدير.", r: 10, b: "عشر مرات بعد المغرب والصبح." },
+      { z: "اللَّهُمَّ إِنِّي أسألُك عِلماً نافعاً، ورزقاً طيِّباً، وعملاً مُتَقَبَّلاً.", r: 1, b: "بعد السلام من صلاة الفجر." },
+      { z: "اللهم أجِرني من النار.", r: 7, b: "بعد صلاة الصبح والمغرب." },
+      { z: "اللهم أعِنِّي على ذِكرِك وشُكرِك وحُسنِ عِبادتِك.", r: 1, b: "" }
     
     ]
   },
@@ -663,12 +673,12 @@ const DATA = {
     title: "أذكار الاستيقاظ",
     azkar: [
       { z: "الحمدُ للهِ الذي أَحيانا بَعدَ مَا أَماتَنا وَإِلَيهِ النُّشور.", r: 1, b: "" },
-      ,{ z: "لا إلهَ إلا اللهُ وَحدَهُ لا شَريكَ لَهُ، لَهُ المُلكُ وَلَهُ الحَمد، وَهُوَ عَلى كُلِّ شَيءٍ قَدير.\n\nسُبحانَ اللهِ، والحمدُ للهِ، ولا إلهَ إلا اللهُ، واللهُ أكبر، ولا حَولَ ولا قُوَّةَ إلا باللهِ العَليِّ العَظيم.", r: 1, b: "" },
-      ,{ z: "الحمدُ للهِ الذي عافانِي في جَسَدي وَرَدَّ عَلَيَّ رُوحي وَأَذِنَ لي بِذِكرِه.", r: 1, b: "" },
-      ,{ z: "اللّهُمَّ بِكَ أَصْبَحْنا وبكَ أَمسَيْنا، وبكَ نَحْيا وبكَ نَموتُ وإليكَ النُّشور.", r: 1, b: "" },
-      ,{ z: "أَصْبَحْنا وَأَصْبَحَ المُلْكُ لله، والحمدُ لله، لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير.\n\nربِّ أسألك خير ما في هذا اليوم وخير ما بعده، وأعوذ بك من شر ما في هذا اليوم وشر ما بعده.", r: 1, b: "" },
-      ,{ z: "اللّهُمَّ إِنِّي أسألُك عِلماً نافعاً، ورزقاً طيِّباً، وعملاً مُتَقَبَّلاً.", r: 1, b: "" },
-      ,{ z: "أسْتَغْفِرُ اللهَ العَظِيمَ الَّذِي لا إلَهَ إلاَّ هُوَ، الحَيُّ القَيُّومُ، وَأتُوبُ إليه.", r: 3, b: "" }
+      { z: "لا إلهَ إلا اللهُ وَحدَهُ لا شَريكَ لَهُ، لَهُ المُلكُ وَلَهُ الحَمد، وَهُوَ عَلى كُلِّ شَيءٍ قَدير.\n\nسُبحانَ اللهِ، والحمدُ للهِ، ولا إلهَ إلا اللهُ، واللهُ أكبر، ولا حَولَ ولا قُوَّةَ إلا باللهِ العَليِّ العَظيم.", r: 1, b: "" },
+      { z: "الحمدُ للهِ الذي عافانِي في جَسَدي وَرَدَّ عَلَيَّ رُوحي وَأَذِنَ لي بِذِكرِه.", r: 1, b: "" },
+      { z: "اللّهُمَّ بِكَ أَصْبَحْنا وبكَ أَمسَيْنا، وبكَ نَحْيا وبكَ نَموتُ وإليكَ النُّشور.", r: 1, b: "" },
+      { z: "أَصْبَحْنا وَأَصْبَحَ المُلْكُ لله، والحمدُ لله، لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير.\n\nربِّ أسألك خير ما في هذا اليوم وخير ما بعده، وأعوذ بك من شر ما في هذا اليوم وشر ما بعده.", r: 1, b: "" },
+      { z: "اللّهُمَّ إِنِّي أسألُك عِلماً نافعاً، ورزقاً طيِّباً، وعملاً مُتَقَبَّلاً.", r: 1, b: "" },
+      { z: "أسْتَغْفِرُ اللهَ العَظِيمَ الَّذِي لا إلَهَ إلاَّ هُوَ، الحَيُّ القَيُّومُ، وَأتُوبُ إليه.", r: 3, b: "" }
     
     ]
   }
@@ -682,6 +692,100 @@ Object.keys(DATA).forEach(cat => {
 });
 
 let currentCat = 'sabah';
+
+
+// English translations by category and index
+var EN = {
+  sabah: [
+    "I seek refuge in Allah from Satan the outcast. Allah — there is no god except Him, the Ever-Living, the Sustainer of existence. His Throne extends over the heavens and the earth. And He is the Most High, the Most Great. [Ayat Al-Kursi — Al-Baqarah: 255]",
+    "In the name of Allah, the Most Gracious, the Most Merciful. Say: He is Allah, the One. Allah, the Eternal Refuge. He neither begets nor is born. Nor is there to Him any equivalent. [Surah Al-Ikhlas]",
+    "In the name of Allah, the Most Gracious, the Most Merciful. Say: I seek refuge in the Lord of daybreak, from the evil of that which He created, and from the evil of darkness when it settles, and from the evil of the blowers in knots, and from the evil of an envier when he envies. [Surah Al-Falaq]",
+    "In the name of Allah, the Most Gracious, the Most Merciful. Say: I seek refuge in the Lord of mankind, the Sovereign of mankind, from the evil of the retreating whisperer who whispers in the breasts of mankind. [Surah An-Nas]",
+    "We have reached the morning and at this very time unto Allah belongs all sovereignty. All praise is for Allah. My Lord, I ask You for the good of this day and I seek refuge in You from its evil, from laziness, old age, and from torment in the Fire and punishment in the grave.",
+    "O Allah, You are my Lord, there is no god except You. You created me and I am Your servant. I seek refuge in You from the evil of what I have done. I acknowledge Your favor and I acknowledge my sin, so forgive me, for none forgives sins except You. [Sayyid Al-Istighfar]",
+    "I am pleased with Allah as my Lord, with Islam as my religion, and with Muhammad (peace be upon him) as my Prophet.",
+    "O Allah, I take You as a witness this morning, along with Your Throne-bearers, Your angels, and all of Your creation, that You are Allah with no partner, and that Muhammad is Your servant and Messenger.",
+    "O Allah, whatever blessing I or any of Your creation have received this morning is from You alone, so unto You is all praise and all thanks.",
+    "Allah is sufficient for me, there is no god except Him. In Him I put my trust, and He is the Lord of the magnificent Throne.",
+    "In the name of Allah, with Whose name nothing can cause harm in the earth or in the heavens, and He is the All-Hearing, the All-Knowing.",
+    "O Allah, by You we have reached the morning and by You we reach the evening, by You we live and by You we die, and unto You is the resurrection.",
+    "We have reached the morning upon the natural religion of Islam, the word of sincerity, the religion of our Prophet Muhammad (peace be upon him), and the tradition of our father Abraham, a monotheist Muslim.",
+    "Glory be to Allah and all praise is due to Him by the number of His creation, by His pleasure, by the weight of His Throne, and by the ink of His words.",
+    "O Allah, grant me well-being in my body, in my hearing, and in my sight. There is no god except You.",
+    "O Allah, I seek refuge in You from disbelief and poverty, and from the punishment of the grave. There is no god except You.",
+    "O Allah, I ask You for pardon and well-being in this life and the next. Conceal my faults, protect me from fear, and guard me from all sides.",
+    "O Ever-Living, O Self-Sustaining Sustainer, in Your mercy I seek relief. Rectify for me all of my affairs and do not leave me to myself even for the blink of an eye.",
+    "O Allah, I ask You for beneficial knowledge, wholesome provision, and accepted deeds.",
+    "O Allah, send prayers upon Muhammad and the family of Muhammad, as You sent prayers upon Ibrahim and the family of Ibrahim. You are indeed Worthy of Praise, Full of Glory. O Allah, send blessings upon Muhammad and the family of Muhammad.",
+    "I seek forgiveness from Allah the Magnificent, there is no god except Him, the Ever-Living, the Self-Sustaining, and I repent to Him.",
+    "There is no god except Allah, alone, without partner. To Him belongs all sovereignty and all praise, and He is over all things All Powerful.",
+    "Glory be to Allah and all praise is due to Him."
+  ],
+  masa: [
+    "I seek refuge in Allah from Satan the outcast. Allah — there is no god except Him, the Ever-Living, the Sustainer of existence. His Throne extends over the heavens and the earth. And He is the Most High, the Most Great. [Ayat Al-Kursi]",
+    "In the name of Allah, the Most Gracious, the Most Merciful. Say: He is Allah, the One. Allah, the Eternal Refuge. He neither begets nor is born. Nor is there to Him any equivalent.",
+    "In the name of Allah, the Most Gracious, the Most Merciful. Say: I seek refuge in the Lord of daybreak, from the evil of that which He created, and from the evil of darkness when it settles.",
+    "In the name of Allah, the Most Gracious, the Most Merciful. Say: I seek refuge in the Lord of mankind, the Sovereign of mankind, from the evil of the retreating whisperer.",
+    "We have reached the evening and at this very time unto Allah belongs all sovereignty. All praise is for Allah. My Lord, I ask You for the good of this night and I seek refuge in You from its evil, from laziness, old age, and from torment in the Fire and punishment in the grave.",
+    "O Allah, You are my Lord, there is no god except You. You created me and I am Your servant. I seek refuge in You from the evil of what I have done. I acknowledge Your favor and I acknowledge my sin, so forgive me. [Sayyid Al-Istighfar]",
+    "I am pleased with Allah as my Lord, with Islam as my religion, and with Muhammad (peace be upon him) as my Prophet.",
+    "O Allah, I take You as a witness this evening, along with Your Throne-bearers, Your angels, and all of Your creation, that You are Allah with no partner, and that Muhammad is Your servant and Messenger.",
+    "O Allah, whatever blessing I or any of Your creation have received this evening is from You alone, so unto You is all praise and all thanks.",
+    "Allah is sufficient for me, there is no god except Him. In Him I put my trust, and He is the Lord of the magnificent Throne.",
+    "In the name of Allah, with Whose name nothing can cause harm in the earth or in the heavens, and He is the All-Hearing, the All-Knowing.",
+    "O Allah, by You we reach the evening and by You we reach the morning, by You we live and by You we die, and unto You is the resurrection.",
+    "We have reached the evening upon the natural religion of Islam, the word of sincerity, the religion of our Prophet Muhammad (peace be upon him), and the tradition of our father Abraham.",
+    "Glory be to Allah and all praise is due to Him by the number of His creation, by His pleasure, by the weight of His Throne, and by the ink of His words.",
+    "O Allah, grant me well-being in my body, in my hearing, and in my sight. There is no god except You.",
+    "O Allah, I seek refuge in You from disbelief and poverty, and from the punishment of the grave. There is no god except You.",
+    "O Allah, I ask You for pardon and well-being in this life and the next. Conceal my faults, protect me from fear, and guard me from all sides.",
+    "O Ever-Living, O Self-Sustaining Sustainer, in Your mercy I seek relief. Rectify for me all of my affairs and do not leave me to myself even for the blink of an eye.",
+    "O Allah, Knower of the seen and the unseen, Creator of the heavens and earth, I bear witness that there is no god except You. I seek refuge in You from the evil of my soul and from the evil of the devil.",
+    "I seek refuge in the perfect words of Allah from the evil of what He has created.",
+    "O Allah, send prayers upon Muhammad and the family of Muhammad, as You sent prayers upon Ibrahim and the family of Ibrahim. O Allah, send blessings upon Muhammad and the family of Muhammad.",
+    "There is no god except Allah, alone, without partner. To Him belongs all sovereignty and all praise, and He is over all things All Powerful.",
+    "Glory be to Allah and all praise is due to Him."
+  ],
+  salah: [
+    "I seek forgiveness from Allah (three times). O Allah, You are Peace and from You comes peace. Blessed are You, O Possessor of majesty and honor.",
+    "There is no god except Allah alone. To Him belongs all sovereignty and all praise. O Allah, none can prevent what You have willed to bestow, and none can bestow what You have willed to prevent.",
+    "There is no god except Allah, alone, without partner. To Him belongs all sovereignty and all praise. He gives life and causes death. There is no power and no strength except with Allah.",
+    "Glory be to Allah. All praise is due to Allah. Allah is the Greatest.",
+    "There is no god except Allah, alone, without partner. To Him belongs all sovereignty and all praise, and He is over all things All Powerful.",
+    "In the name of Allah, the Most Gracious, the Most Merciful. Say: He is Allah, the One.",
+    "In the name of Allah, the Most Gracious, the Most Merciful. Say: I seek refuge in the Lord of daybreak.",
+    "In the name of Allah, the Most Gracious, the Most Merciful. Say: I seek refuge in the Lord of mankind.",
+    "Allah — there is no god except Him, the Ever-Living, the Sustainer of existence. [Ayat Al-Kursi]",
+    "There is no god except Allah, alone, without partner. He gives life and causes death, and He is over all things All Powerful.",
+    "O Allah, I ask You for beneficial knowledge, wholesome provision, and accepted deeds.",
+    "O Allah, protect me from the Fire.",
+    "O Allah, help me to remember You, to be grateful to You, and to worship You in an excellent manner."
+  ],
+  nawm: [
+    "O Allah, You are my Lord, there is no god except You. You created me and I am Your servant. I seek refuge in You from the evil of what I have done. I acknowledge Your favor and I acknowledge my sin, so forgive me. [Sayyid Al-Istighfar]",
+    "O Allah, You have created my soul and You shall take it back. If You give it life then protect it, and if You cause it to die then forgive it. O Allah, I ask You for well-being.",
+    "In Your name, my Lord, I lie down on my side, and in Your name I raise up. If You take my soul, have mercy on it, and if You release it, protect it as You protect Your righteous servants.",
+    "In the name of Allah, the Most Gracious, the Most Merciful. Say: He is Allah, the One. Allah, the Eternal Refuge.",
+    "In the name of Allah, the Most Gracious, the Most Merciful. Say: I seek refuge in the Lord of daybreak.",
+    "In the name of Allah, the Most Gracious, the Most Merciful. Say: I seek refuge in the Lord of mankind.",
+    "Allah — there is no god except Him, the Ever-Living, the Sustainer of existence. Neither drowsiness nor sleep overtakes Him. [Ayat Al-Kursi]",
+    "The Messenger has believed in what was revealed to him from his Lord. Our Lord, do not impose blame upon us if we have forgotten or erred. Our Lord, grant us forgiveness, have mercy upon us. You are our protector. [Al-Baqarah: 285-286]",
+    "In Your name, O Allah, I die and I live.",
+    "O Allah, protect me from Your punishment on the Day You resurrect Your servants.",
+    "Glory be to Allah.",
+    "All praise is due to Allah.",
+    "Allah is the Greatest."
+  ],
+  istiqaz: [
+    "All praise is for Allah who gave us life after He had caused us to die, and unto Him is the resurrection.",
+    "There is no god except Allah, alone, without partner. To Him belongs all sovereignty and all praise. Glory be to Allah. All praise is due to Allah. There is no god except Allah. Allah is the Greatest. There is no power and no strength except with Allah, the Most High, the Most Great.",
+    "All praise is for Allah who restored my health to my body, returned my soul to me, and permitted me to remember Him.",
+    "O Allah, by You we reach the morning and by You we reach the evening, by You we live and by You we die, and unto You is the resurrection.",
+    "We have reached the morning and at this very time unto Allah belongs all sovereignty. All praise is for Allah. My Lord, I ask You for the good of this day and the good of what follows it.",
+    "O Allah, I ask You for beneficial knowledge, wholesome provision, and accepted deeds.",
+    "I seek forgiveness from Allah the Magnificent, there is no god except Him, the Ever-Living, the Self-Sustaining, and I repent to Him."
+  ]
+};
 
 function buildCards(cat) {
   const container = document.getElementById('cards-' + cat);
@@ -702,6 +806,7 @@ function buildCards(cat) {
       </div>
       <div class="card-body">
         <div class="zikr-text">${item.z.replace(/\n/g, '<br>')}</div>
+        ${(EN[cat] && EN[cat][i]) ? '<p style="font-size:0.85rem;color:#6b5a30;font-family:sans-serif;line-height:1.7;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid rgba(201,168,76,0.2);font-style:italic;direction:ltr;text-align:left;">' + EN[cat][i] + '</p>' : ''}
       </div>
       ${item.b ? `<div class="card-bless"><i class="bless-icon">◆</i><span>${item.b}</span></div>` : ''}
       <div class="card-footer">
@@ -1012,6 +1117,70 @@ updateProgress('sabah');
       <p>فاحرص أخي المسلم على تخصيص وقت يومي لطلب العلم الشرعي النافع، فإن العلم نور يهدي صاحبه في الدنيا والآخرة، والجهل ظلام يوقع صاحبه في المهالك.</p>
     </div>
   </div>
+
+  <div class="page-card">
+    <div class="page-card-hdr">&#9670; فضل أذكار السفر وآداب المسافر المسلم</div>
+    <div class="page-card-body">
+      <p>السفر من أكثر الأوقات التي يحتاج فيها المسلم إلى حفظ الله ورعايته، إذ يكون بعيداً عن وطنه وأهله في بيئة غير مألوفة، لذا شرع الله ورسوله أذكاراً خاصة بالسفر تحفظ المسافر وترافقه في رحلته.</p>
+      <p>ومن أعظم أذكار السفر التي علّمها النبي صلى الله عليه وسلم قوله عند ركوب الدابة أو السيارة أو الطائرة: <strong>"سبحان الذي سخّر لنا هذا وما كنّا له مقرنين وإنّا إلى ربنا لمنقلبون، اللهم إنا نسألك في سفرنا هذا البِرَّ والتقوى، ومن العمل ما ترضى، اللهم هوِّن علينا سفرنا هذا واطوِ عنّا بُعده، اللهم أنت الصاحب في السفر والخليفة في الأهل"</strong> [رواه مسلم].</p>
+      <p>وقد علّمنا النبي صلى الله عليه وسلم أن ندعو لمن يودّعنا ونودّعه، فكان إذا أراد أن يودّع رجلاً قال له: <strong>"أستودع الله دينك وأمانتك وخواتيم عملك"</strong> [رواه الترمذي وصححه الألباني].</p>
+      <p>وكذلك علّمنا دعاء الوصول إلى المكان فقال صلى الله عليه وسلم: <strong>"من نزل منزلاً فقال: أعوذ بكلمات الله التامات من شر ما خلق، لم يضره شيء حتى يرتحل من منزله ذلك"</strong> [رواه مسلم].</p>
+      <p>ومن آداب السفر الإسلامية التي ينبغي للمسافر المسلم مراعاتها:</p>
+      <p>&#10003; <strong>الاستخارة قبل السفر:</strong> إذا كان السفر اختيارياً فيستحب أن يصلي المسافر ركعتي الاستخارة ويدعو بدعائها.</p>
+      <p>&#10003; <strong>توديع الأهل والجيران:</strong> كان النبي صلى الله عليه وسلم إذا أراد السفر ودّع أهله وطلب منهم الدعاء.</p>
+      <p>&#10003; <strong>المحافظة على الصلاة:</strong> فالمسافر يقصر الصلاة الرباعية ركعتين، ويجمع بين الصلاتين عند الحاجة.</p>
+      <p>&#10003; <strong>الإكثار من الدعاء:</strong> فدعاء المسافر من الأدعية المستجابة، قال صلى الله عليه وسلم: <strong>"ثلاث دعوات مستجابات: دعوة المسافر، ودعوة المظلوم، ودعوة الوالد على ولده"</strong> [رواه الترمذي].</p>
+      <p>&#10003; <strong>ذكر الله عند الصعود والنزول:</strong> يقول "الله أكبر" ثلاثاً عند الصعود على المرتفعات، و"سبحان الله" عند النزول.</p>
+      <p>فاحرص أخي المسافر على هذه الأذكار والآداب في سفرك، فإنها سبب لحفظ الله لك وتيسير أمورك وسلامة رحلتك بإذن الله تعالى.</p>
+    </div>
+  </div>
+
+  <div class="page-card">
+    <div class="page-card-hdr">&#9670; فضل ليلة القدر وكيف تحييها</div>
+    <div class="page-card-body">
+      <p>ليلة القدر هي أعظم ليالي العام على الإطلاق، وقد أنزل الله فيها القرآن الكريم هدىً للناس، وجعلها خيراً من ألف شهر — أي خيراً من ثلاثة وثمانين عاماً. قال تعالى: <strong>"إِنَّا أَنزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ &#9632; وَمَا أَدْرَاكَ مَا لَيْلَةُ الْقَدْرِ &#9632; لَيْلَةُ الْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ"</strong> [القدر: 1-3].</p>
+      <p>وقد بيّن النبي صلى الله عليه وسلم أن ليلة القدر في العشر الأواخر من رمضان، وحثّ على تحريها في الليالي الوترية منها، فقال: <strong>"تحرّوا ليلة القدر في الوتر من العشر الأواخر من رمضان"</strong> [متفق عليه].</p>
+      <p>وأفضل ما يُدعى به في ليلة القدر ما علّمه النبي صلى الله عليه وسلم لعائشة رضي الله عنها حين سألته: يا رسول الله، إن أنا علمت أي ليلة ليلة القدر ما أقول فيها؟ قال: <strong>"قولي: اللهم إنك عفو كريم تحب العفو فاعف عني"</strong> [رواه الترمذي وصححه الألباني].</p>
+      <p>وإحياء ليلة القدر يكون بأمور عدة:</p>
+      <p>&#10003; <strong>قيام الليل:</strong> قال صلى الله عليه وسلم: <strong>"من قام ليلة القدر إيماناً واحتساباً غُفر له ما تقدم من ذنبه"</strong> [متفق عليه]. فاحرص على قيام الليل كله أو أكثره.</p>
+      <p>&#10003; <strong>الإكثار من قراءة القرآن:</strong> فليلة القدر هي ليلة القرآن، فاقرأ من القرآن ما استطعت وتدبّر معانيه.</p>
+      <p>&#10003; <strong>الإكثار من الدعاء:</strong> خاصةً دعاء العفو المذكور أعلاه، فادعُ به مراراً وتكراراً مع حضور القلب واليقين بالإجابة.</p>
+      <p>&#10003; <strong>الإكثار من الذكر والاستغفار:</strong> سبحان الله والحمد لله ولا إله إلا الله والله أكبر واستغفر الله.</p>
+      <p>&#10003; <strong>الصدقة:</strong> فالصدقة في ليلة القدر تعادل الصدقة لأكثر من ثمانين عاماً.</p>
+      <p>فاغتنم هذه الليلة العظيمة ولا تدعها تمر بغفلة، فإن من وُفِّق لإحيائها بالإيمان والاحتساب فقد حاز خيراً عظيماً لا يُقدَّر.</p>
+    </div>
+  </div>
+
+  <div class="page-card">
+    <div class="page-card-hdr">&#9670; فضل العشر الأوائل من ذي الحجة وأعمالها</div>
+    <div class="page-card-body">
+      <p>أقسم الله تعالى بالعشر الأوائل من ذي الحجة في كتابه الكريم فقال: <strong>"وَالْفَجْرِ &#9632; وَلَيَالٍ عَشْرٍ"</strong> [الفجر: 1-2]، وقد فسّر كثير من المفسرين هذه الليالي العشر بأنها أوائل ذي الحجة، وهذا القسم الإلهي دليل على عظيم شأنها عند الله.</p>
+      <p>وقد بيّن النبي صلى الله عليه وسلم فضل هذه الأيام العشرة فقال: <strong>"ما من أيام العمل الصالح فيهن أحب إلى الله من هذه الأيام العشرة"</strong>، فقالوا: يا رسول الله ولا الجهاد في سبيل الله؟ فقال: <strong>"ولا الجهاد في سبيل الله إلا رجل خرج بنفسه وماله فلم يرجع من ذلك بشيء"</strong> [رواه البخاري].</p>
+      <p>ومن أفضل الأعمال في هذه الأيام العشرة:</p>
+      <p>&#10003; <strong>الإكثار من الذكر:</strong> قال تعالى: <strong>"وَيَذْكُرُوا اسْمَ اللَّهِ فِي أَيَّامٍ مَّعْلُومَاتٍ"</strong> [الحج: 28]، وهي أيام العشر. فأكثر من التكبير والتهليل والتسبيح والتحميد.</p>
+      <p>&#10003; <strong>صيام التسع الأول:</strong> كانت عائشة رضي الله عنها تقول: "كان رسول الله صلى الله عليه وسلم يصوم تسع ذي الحجة"، فاحرص على صيامها أو ما استطعت منها.</p>
+      <p>&#10003; <strong>صيام يوم عرفة:</strong> وهو اليوم التاسع من ذي الحجة، وهو أفضل هذه الأيام العشرة، قال صلى الله عليه وسلم: <strong>"صيام يوم عرفة أحتسب على الله أن يكفّر السنة التي قبله والسنة التي بعده"</strong> [رواه مسلم].</p>
+      <p>&#10003; <strong>التكبير المطلق:</strong> يستحب الإكثار من قول: "الله أكبر الله أكبر لا إله إلا الله والله أكبر الله أكبر ولله الحمد" في هذه الأيام جهراً في المساجد والأسواق والبيوت.</p>
+      <p>&#10003; <strong>الأضحية:</strong> لمن استطاع أن يضحي فإن ذلك من أعظم شعائر هذه الأيام.</p>
+      <p>فاغتنم هذه الأيام العشرة المباركة بالعمل الصالح، فإن العمل فيها أحب إلى الله من العمل في سائر أيام العام.</p>
+    </div>
+  </div>
+
+  <div class="page-card">
+    <div class="page-card-hdr">&#9670; أذكار دخول المنزل والخروج منه وفضلها</div>
+    <div class="page-card-body">
+      <p>منزل المسلم هو حصنه الأمين ومكان راحته وأمانه، وقد شرع الله له أذكاراً خاصة عند دخوله والخروج منه تجعله مباركاً مليئاً بالخير والطمأنينة وتحميه من الشر والأذى.</p>
+      <p>فعن أبي مالك الأشعري رضي الله عنه أن النبي صلى الله عليه وسلم قال: <strong>"إذا ولج الرجل بيته فليقل: اللهم إني أسألك خير المولج وخير المخرج، بسم الله ولجنا وبسم الله خرجنا وعلى الله ربنا توكلنا، ثم ليسلِّم على أهله"</strong> [رواه أبو داود].</p>
+      <p>وقد أخبر النبي صلى الله عليه وسلم أن ذكر الله عند دخول البيت يطرد الشيطان فقال: <strong>"إذا دخل الرجل بيته فذكر الله عند دخوله وعند طعامه قال الشيطان: لا مبيت لكم ولا عشاء، وإذا دخل فلم يذكر الله عند دخوله قال الشيطان: أدركتم المبيت، وإذا لم يذكر الله عند طعامه قال: أدركتم المبيت والعشاء"</strong> [رواه مسلم].</p>
+      <p>وأما ذكر الخروج من البيت فقد علّمنا النبي صلى الله عليه وسلم أن نقول: <strong>"بسم الله توكلت على الله ولا حول ولا قوة إلا بالله"</strong> فإذا قالها العبد قيل له: هُديت وكُفيت ووُقيت، وتنحّى عنه الشيطان.</p>
+      <p>ومن فوائد هذه الأذكار العظيمة:</p>
+      <p>&#10003; <strong>طرد الشيطان من البيت:</strong> فالشيطان لا يقدر على من ذكر الله عند دخوله بيته.</p>
+      <p>&#10003; <strong>البركة في البيت:</strong> فذكر الله يجلب البركة ويملأ البيت بالنور والخير.</p>
+      <p>&#10003; <strong>الحفظ عند الخروج:</strong> فمن قال ذكر الخروج كُفي وهُدي ووُقي من كل شر.</p>
+      <p>&#10003; <strong>راحة القلب والطمأنينة:</strong> فذاكر الله في بيته يعيش في أمان وطمأنينة لا يجدهما من غفل عن ذكر الله.</p>
+      <p>فاحرص أخي المسلم على هذه الأذكار كلما دخلت بيتك أو خرجت منه، وعلّمها لأهلك وأولادك، فإنها سبب لبركة البيت وحفظه من كل شر بإذن الله تعالى.</p>
+    </div>
+  </div>
 </main>
 </div>
 
@@ -1082,6 +1251,18 @@ function showPage(page) {
     }
   });
   window.scrollTo(0, 0);
+}
+</script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(reg) {
+      console.log('SW registered:', reg.scope);
+    }).catch(function(err) {
+      console.log('SW failed:', err);
+    });
+  });
 }
 </script>
 </body>
