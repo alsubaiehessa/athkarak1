@@ -449,11 +449,8 @@
     <button class="cat-btn" data-cat="salah">أذكار بعد الصلاة</button>
     <button class="cat-btn" data-cat="nawm">أذكار النوم</button>
     <button class="cat-btn" data-cat="istiqaz">أذكار الاستيقاظ</button>
-    <button class="cat-btn" data-cat="wudu">أذكار الوضوء</button>
-    <button class="cat-btn" data-cat="manzil">أذكار المنزل</button>
-    <button class="cat-btn" data-cat="khalaa">أذكار الخلاء</button>
-    <button class="cat-btn" data-cat="taam">أذكار الطعام</button>
-  </div>
+      <button class="cat-btn" data-cat="wudu">أذكار الوضوء</button>
+    </div>
 </nav>
 
 <div class="progress-wrap" id="progressWrap">
@@ -497,37 +494,18 @@
     <div class="all-done-banner" id="done-istiqaz">☀️ أتممت أذكار الاستيقاظ — بارك الله فيك</div>
     <div id="cards-istiqaz"></div>
   </section>
+      <section class="category-section" id="sec-wudu">
+        <div class="section-title">أذكار الوضوء</div>
+        <div class="all-done-banner" id="done-wudu">✅ أتممت أذكار الوضوء — بارك الله فيك</div>
+        <div id="cards-wudu"></div>
+      </section>
 
 
   <!-- ══ أذكار الوضوء ══ -->
-  <section class="category-section" id="sec-wudu">
-    <div class="section-title">أذكار الوضوء</div>
-    <div class="all-done-banner" id="done-wudu">💧 أتممت أذكار الوضوء — بارك الله فيك</div>
-    <div id="cards-wudu"></div>
-  </section>
-
   <!-- ══ أذكار المنزل ══ -->
-  <section class="category-section" id="sec-manzil">
-    <div class="section-title">أذكار المنزل</div>
-    <div class="all-done-banner" id="done-manzil">🏠 أتممت أذكار المنزل — بارك الله فيك</div>
-    <div id="cards-manzil"></div>
-  </section>
-
   <!-- ══ أذكار الخلاء ══ -->
-  <section class="category-section" id="sec-khalaa">
-    <div class="section-title">أذكار الخلاء</div>
-    <div class="all-done-banner" id="done-khalaa">✨ أتممت أذكار الخلاء — بارك الله فيك</div>
-    <div id="cards-khalaa"></div>
-  </section>
-
   <!-- ══ أذكار الطعام ══ -->
-  <section class="category-section" id="sec-taam">
-    <div class="section-title">أذكار الطعام</div>
-    <div class="all-done-banner" id="done-taam">🍽️ أتممت أذكار الطعام — بارك الله فيك</div>
-    <div id="cards-taam"></div>
-  </section>
-
-</main>
+  </main>
 
 <footer>
   <div class="footer-arabic">وَاذْكُرُوا اللَّهَ كَثِيرًا لَعَلَّكُمْ تُفْلِحُونَ</div>
@@ -806,7 +784,7 @@ function buildCards(cat) {
       </div>
       <div class="card-body">
         <div class="zikr-text">${item.z.replace(/\n/g, '<br>')}</div>
-        ${(EN[cat] && EN[cat][i]) ? '<p style="font-size:0.85rem;color:#6b5a30;font-family:sans-serif;line-height:1.7;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid rgba(201,168,76,0.2);font-style:italic;direction:ltr;text-align:left;">' + EN[cat][i] + '</p>' : ''}
+        
       </div>
       ${item.b ? `<div class="card-bless"><i class="bless-icon">◆</i><span>${item.b}</span></div>` : ''}
       <div class="card-footer">
